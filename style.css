@@ -1,4 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 *{
     font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 75vw; 
+    margin: auto;
+    color: #6B708D;
+    padding-top: 70px;
+}
+
+#logo {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo img{
+    height: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #6B708D;
+}
+
+a:hover {
+    color: #072AC8;
+}
+
+.btn {
+    background-color: #072AC8;
+    border: none;
+    color: #fff;
+    font-size: 1.0625em;
+    padding: 15px 36px;
+}
+
+.btn:hover {
+    background-color: #041a7e;
+}
+
+.btn:active {
+    background-color: #072AC8;
+}
+
+ul {
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav ul {
+    width: 295px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #292E47;
+    font-weight: 900;
+    font-size: 3.75em;
+}
+
+#hero-l {
+    width: 27.5vw;
+}
+
+header, #main-cta {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    margin: 100px 0 130px 0;
+    justify-content: space-between;
+}
+
+header img {
+    position: relative;
+}
+
+header p {
+    margin: 35px 0;
+}
+
+#main-img {
+    width: 570px;
+}
+
+#card-img {
+    width: 400px;
+    position: absolute;
+    left: 48%;
+    top: 18%;
+}
+
+#like-img {
+    width: 350px;
+    position: absolute;
+    bottom: -12%;
+    right: 8%;
+}
+
+#main-cta > button {
+    margin-right: 40px;
+}
+
+.logos {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  
+.logos:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(0%);
+    -ms-filter:     grayscale(0%);
+    -o-filter:      grayscale(0%);
+  }
+
+h2 {
+    font-weight: 900;
+    font-size: 2.5em;
+    color:#292E47;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+#testimonials {
+    background-color: #292E47;
+    background-image: url('/assets/testimonial-section/orbit.png');
+}
+
+#testimonials h2 {
+    color: #fff;
+    text-align: center;
+}
+
+blockquote {
+    text-align: center;
+    color: #ffc600;
+    font-size: 1.5em;
+    line-height: 160%;
 }
