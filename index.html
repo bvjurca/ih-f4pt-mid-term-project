@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <a id="logo" href="/index.html">
         <img src="/assets/logos/circle.svg" alt="Circle logo"/>
       </a>
@@ -34,71 +34,77 @@
       </div>
     </header>
     <section id="logostrip">
-      <img href="/assets/logos/airbnb-logo.svg" class="logos" alt="airbnb logo"/>
-      <img href="/assets/logos/google-logo.svg" class="logos" alt="google logo"/>
-      <img href="/assets/logos/microsoft-logo.svg" class="logos" alt="microsoft logo"/>
-      <img href="/assets/logos/fedex-logo.svg" class="logos" alt="fedex logo" />
-      <img href="/assets/logos/amazon-logo.svg" class="logos" alt="amazon logo"/>
+      <img src="/assets/logos/airbnb-logo.svg" class="logos" alt="airbnb logo"/>
+      <img src="/assets/logos/google-logo.svg" class="logos" alt="google logo"/>
+      <img src="/assets/logos/microsoft-logo.svg" class="logos" alt="microsoft logo"/>
+      <img src="/assets/logos/fedex-logo.svg" class="logos" alt="fedex logo" />
+      <img src="/assets/logos/amazon-logo.svg" class="logos" alt="amazon logo"/>
     </section>
     <section id="projects">
-      <h2>Recent projects</h2>
+      <h2 class="left-aligned">Recent projects</h2>
       <div>
         <article>
-          <img href="/assets/projects-section/1.jpg" class="" alt="graphic" />
-          <h4>Simplify</h4>
-          <p>UI Design & App Development</p>
-          <a href="/project.html">Learn more</a>
+          <img src="/assets/projects-section/1.jpg" class="img-proj" alt="graphic" />
+          <div> 
+            <h4>Simplify</h4>
+            <p>UI Design & App Development</p>
+            <a href="/project.html">Learn more</a>
+          </div>
         </article>
         <article>
-          <img href="/assets/projects-section/2.jpg" class="" alt="graphic" />
-          <h4>Dashcoin</h4>
-          <p>Web Development</p>
-          <a href="/project.html">Learn more</a>
+          <img src="/assets/projects-section/2.jpg" class="img-proj" alt="graphic" />
+          <div>
+            <h4>Dashcoin</h4>
+            <p>Web Development</p>
+            <a href="/project.html">Learn more</a>
+          </div>
         </article>
         <article>
-          <img href="/assets/projects-section/3.jpg" class="" alt="graphic" />
-          <h4>Vectorify</h4>
-          <p>User Experience Design</p>
-          <a href="/project.html">Learn more</a>
+          <img src="/assets/projects-section/3.jpg" class="img-proj" alt="graphic" />
+          <div>
+            <h4>Vectorify</h4>
+            <p>User Experience Design</p>
+            <a href="/project.html">Learn more</a>
+          </div>
         </article>
       </div>
     </section>
     <section id="testimonials">
       <h2>Hear What Our Clients Have to Say</h2>
       <blockquote>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</blockquote>
-      <img src="/assets/testimonial-section/memoji-1.png" alt="fingers crossed emoji" class="" id=""/>
-      <img src="/assets/testimonial-section/memoji-2.png" alt="thumbs up emoji" class="" id=""/>
-      <img src="/assets/testimonial-section/memoji-3.png" alt="wink emoji" class="" id=""/>
-      <img src="/assets/testimonial-section/memoji-4.png" alt="party emoji" class="" id=""/>
-      <div>
+      <img src="/assets/testimonial-section/memoji-1.png" alt="fingers crossed emoji" id="memojia"/>
+      <img src="/assets/testimonial-section/memoji-2.png" alt="thumbs up emoji" id="memojib"/>
+      <img src="/assets/testimonial-section/memoji-3.png" alt="wink emoji" id="memojic"/>
+      <img src="/assets/testimonial-section/memoji-4.png" alt="party emoji" id="memojid"/>
+      <div id="testimonials-user">
         <div id="avatar"></div>
         <div>
-          <p>Kristin Watson</p>
-          <p>Booking.com</p>
+          <p id="testimonials-username">Kristin Watson</p>
+          <p id="testimonials-source">Booking.com</p>
         </div>
        
       </div>
     </section>
     <section id="services">
-      <h2>Our Services</h2>
+      <h2 class="left-aligned">Our Services</h2>
       <div>
         <article>
           <img src="/assets/services-section/1.svg" alt="user interface icon" class=""/>
-          <p>User Interface Design</p>
+          <h4>User Interface Design</h4>
           <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-          <a href="#"></a>
+          <a href="#">Learn more</a>
         </article>
         <article>
           <img src="/assets/services-section/2.svg" alt="user experience icon" class=""/>
-          <p>User Experience Design</p>
+          <h4>User Experience Design</h4>
           <p>Circle always focuses on delivering the best user experience to your customers.</p>
-          <a href="#"></a>
+          <a href="#">Learn more</a>
         </article>
         <article>
           <img src="/assets/services-section/3.svg" alt="application development icon" class=""/>
-          <p>Application Development</p>
+          <h4>Application Development</h4>
           <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-          <a href="#"></a>
+          <a href="#">Learn more</a>
         </article>
       </div>
     </section>
@@ -106,12 +112,10 @@
       <h2>Do you have any questions?</h2>
       <p>Let us help you!</p>
       <form>
-        <fieldset>
           <img src="/assets/newsletter/mail.svg" id=""/>
-          <input type="email">
+          <input type="email" name="email" id="email" placeholder="Enter your email">
           <label></label>
           <button type="submit" class="btn">Subscribe</button>
-        </fieldset>
       </form>
     </section>
     <footer>
