@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -28,6 +28,7 @@ nav, header, section, footer {
 a {
   text-decoration: none;
   color: #6b708d;
+  font-weight: 500;
 }
 
 a:hover {
@@ -40,6 +41,7 @@ a:hover {
   color: #fff;
   font-size: 1.0625em;
   padding: 15px 36px;
+  line-height: 130%;
 }
 
 .btn:hover {
@@ -107,22 +109,27 @@ header p {
   margin: 35px 0;
 }
 
+#hero-imgs {
+    position:relative;
+}
+
 #main-img {
   width: 570px;
 }
 
+
 #card-img {
   width: 400px;
   position: absolute;
-  left: 48%;
-  top: 18%;
+  left: -17%;
+  top: -12%;
 }
 
 #like-img {
   width: 350px;
   position: absolute;
-  bottom: -12%;
-  right: 8%;
+  bottom: -17%;
+  right: -12%;
 }
 
 #main-cta > button {
@@ -172,6 +179,7 @@ h4 {
 
 p {
   font-size: 1.25em;
+  line-height: 150%;
 }
 
 #projects {
@@ -200,7 +208,7 @@ article div {
     padding: 30px;
 }
 
-#projects p {
+#projects p, #services p {
     margin-bottom: 50px;
 }
 
@@ -306,6 +314,7 @@ blockquote {
 
 #services article {
     padding: 40px 30px 30px 30px;
+    width: 20vw;
 }
 
 #services img {
@@ -316,33 +325,147 @@ blockquote {
 
 #questions {
   background-color: #ffc600;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 0 5vw 170px 5vw;
   padding: 136px 110px;
   text-align: center;
+  color: #292E47;
+}
+
+#questions h2 {
+    margin-bottom: 0;
+}
+
+form {
+    margin-top: 40px;
 }
 
 form img {
   height: 30px;
+  vertical-align: middle;
 }
 
 form .btn {
-  padding: 30px 60px;
+  padding: 28.455px 60px;
+  display:inline;  
+  margin-left: 20px;
+}
+
+form div {
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    display: inline;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    line-height: 150%;
+    font-size: 1.0625em;
+    width: 300px;
+}
+
+::placeholder {
+    opacity: 1;
+    color: #292E47;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: #6B708D;
+
+}
+
+address {
+    width: 18vw;
+    font-size: 1.0625em;
+    line-height: 150%;
+    font-style: normal;
+
+}
+
+footer img {
+    margin-bottom: 20px;
+    height: 30px;
 }
 
 footer,
 #footer-links {
   display: flex;
   justify-content: space-between;
+  
+}
+
+#footer-links {
+    width: 30vw;
+}
+
+#footer a {
+    font-weight: 200;
 }
 
 #footer-links > div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1em;
 }
 
 @media (max-width: 1024px) {
+    #hero-l {
+
+    }
+
+    h1 {
+        font-size: 2.25em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    #hero-imgs {
+        width: 25vw;
+        left: -30%;
+    }
+
+    #like-img {
+        right:-150%;
+        bottom: -20%;
+    }
+    
+    #like-img, #card-img {
+        width: 320px;
+    }
+
+    .logos {
+        height: 22px;
+    }
+
+    #main-cta {
+        justify-content: center;
+    }
+
+    nav, header, section, footer {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    input {
+        width: 170px;
+    }
+
+    #questions .btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #footer-links {
+        width: 46vw;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -359,4 +482,94 @@ footer,
     font-size: 0.7em;
     padding: 8px;
   }
+
+  header {
+    flex-flow: column-reverse nowrap;
+    height: 700px;
+    margin-bottom: 64px;
+  }
+  
+  #hero-l {
+    width: 100%;
+  }
+
+  #main-img {
+    width: 300px;
+    transition: all 300ms ease;
+  }
+
+  #hero-imgs {
+    left: -22%;
+  }
+  
+  #card-img {
+    left: -100%;
+  }
+
+  #like-img {
+    left:110%;
+    bottom: -40%;
+    width: 280px;
+  }
+
+  nav, header, section, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #projects {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+
+  #projects > div, #services div {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  article {
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  #testimonials {
+    height: 500px;
+  }
+
+  #services article {
+    width: 100%;
+  }
+
+  #services div {
+    margin-right: 9vw;
+  }
+  
+  #services {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  #questions {
+    padding: 2em;
+    margin-bottom: 64px;
+  }
+  
+  form {
+    display:flex;
+    justify-content: center;
+  }
+
+  address {
+    width: 30vw;
+  }
+
+  #footer-links {
+    width: 50vw;
+  }
+
+  #footer-links > div {
+    padding: 0.6em;
+  }
+  
+
 }
