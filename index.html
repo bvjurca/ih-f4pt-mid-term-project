@@ -23,11 +23,11 @@
         <h1>Empower Your Business With Stunning Design!</h1>
         <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
         <div id="main-cta">
-          <button type="button" class="btn">Get in touch</button>
-          <a href="#recent">See our work</a>
+          <button type="button" class="btn" id="btn-main">Get in touch</button>
+          <a href="#projects">See our work</a>
         </div>
       </div>
-      <div>
+      <div id="hero-imgs">
         <img src="/assets/hero-section/hero-image.png" id="main-img" alt="Smiling man with crossed arms" />
         <img src="/assets/hero-section/card-1.png" id="card-img" alt="Choose your card" />
         <img src="/assets/hero-section/card-2.png" id="like-img" alt="Project has been accepted" />
@@ -112,14 +112,15 @@
       <h2>Do you have any questions?</h2>
       <p>Let us help you!</p>
       <form>
-          <img src="/assets/newsletter/mail.svg" id=""/>
+        <div>
+          <img src="/assets/newsletter/mail.svg"/>
           <input type="email" name="email" id="email" placeholder="Enter your email">
-          <label></label>
-          <button type="submit" class="btn">Subscribe</button>
+        </div>
+        <button type="submit" class="btn">Subscribe</button>
       </form>
     </section>
     <footer>
-      <div id="footer-identity">
+      <div>
         <img src="/assets/logos/circle.svg" alt="Circle logo" id="logo-footer"/>
         <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
       </div>
@@ -137,7 +138,6 @@
           <a href="#">Privacy Policy</a>
         </div>
       </div>
-      <ul></ul>
     </footer>
 
     <script src="/scripts.js"></script>

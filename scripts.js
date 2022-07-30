@@ -6,17 +6,6 @@ window.addEventListener('scroll',(e)=>{
       nav.classList.remove("add-shadow");
     }
   });
-/*
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-window.onscroll = function() {myFunction()};
-
-*/
+  document.getElementById("btn-main").onclick = function () {
+    location.href = "/contact.html"; };
