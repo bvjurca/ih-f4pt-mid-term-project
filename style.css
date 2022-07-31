@@ -81,6 +81,17 @@ nav {
   padding: 20px 12.5vw;
 }
 
+/*DARK MODE */
+#mode-toggle:hover {
+    cursor:pointer;
+}
+
+.dark-mode {
+    background-color: #292E47;
+    color:#f2f4fc;
+}
+
+
 h1 {
   color: #292e47;
   font-weight: 900;
@@ -196,6 +207,7 @@ p {
 .img-proj {
   width: 100%;
   height: 240px;
+  object-fit: cover;
 }
 
 article {
@@ -412,6 +424,12 @@ footer,
   padding: 1em;
 }
 
+#project-main {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+}
+
 @media (max-width: 1024px) {
     #hero-l {
 
@@ -450,6 +468,10 @@ footer,
     nav, header, section, footer {
         padding-left: 8vw;
         padding-right: 8vw;
+    }
+
+    article div {
+        padding: 20px;
     }
 
     input {
