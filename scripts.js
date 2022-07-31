@@ -7,5 +7,12 @@ window.addEventListener('scroll',(e)=>{
     }
   });
 
-  document.getElementById("btn-main").onclick = function () {
-    location.href = "/contact.html"; };
+document.getElementById("btn-main").onclick = function () {
+    location.href = "/contact.html"; 
+};
+
+
+document.getElementById("mode-toggle").onclick = function darkMode() {
+    var el = document.body;
+    el.classList.toggle("dark-mode");
+}
