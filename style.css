@@ -60,7 +60,7 @@ ul {
 }
 
 nav ul {
-  width: 295px;
+  width: 350px;
 }
 
 nav {
@@ -91,11 +91,18 @@ nav {
     color:#f2f4fc;
 }
 
+.dark-logo {
+  filter: brightness(3);
+}
 
 h1 {
   color: #292e47;
   font-weight: 900;
   font-size: 3.75em;
+}
+
+.h1dark {
+  color: #f2f4fc;
 }
 
 #hero-l {
@@ -172,7 +179,7 @@ header p {
   justify-content: space-between;
 }
 
-h2 {
+h2, h3 {
   font-weight: 900;
   font-size: 2.5em;
   color: #292e47;
