@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script src="scripts.js"></script>
     <nav id="navbar">
       <a id="logo" href="/index.html">
         <img src="/assets/logos/circle.svg" alt="Circle logo"/>
@@ -87,7 +88,7 @@
     <section id="questions">
       <h3>Do you have any questions?</h3>
       <p>Let us help you!</p>
-      <form>
+      <form onsubmit="formSubmit()" action="project.html">
         <div id="newsletter">
           <img src="/assets/newsletter/mail.svg"/>
           <input type="email" name="email" id="email" placeholder="Enter your email">
@@ -115,6 +116,6 @@
         </div>
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    
   </body>
 </html>

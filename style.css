@@ -473,7 +473,7 @@ footer,
   top: 256px;
   right: 12.5vw;
   left: 12.5vw;
-  width: initial;
+  width: -webkit-fill-available;
   z-index: -1;
   background: url(4.jpg);
   filter: blur(80px);
@@ -696,6 +696,11 @@ label {
     font-size: 0.7em;
   }
 
+  #project-back {
+    filter: blur(80px);
+    top: 200px;
+    transform:scale(0.9);
+  }
   
 
 }
