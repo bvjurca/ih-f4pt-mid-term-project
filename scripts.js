@@ -1,7 +1,26 @@
+//linking to respective projects page
+const projectUrls = document.querySelectorAll('.link-to-proj');
+projectUrls.forEach((el) => {
+  el.onclick = function(e){
+  
+    let indexTitle = e.target.parentElement.querySelector('h4').innerHTML;
+    let indexP = e.target.parentElement.querySelector("p").innerHTML;
+    let imgSource = e.target.parentElement.parentElement.querySelector("img").src;
+    
+
+    const initURL = `/project.html?title=${indexTitle}&tag=${indexP}&imgPath=${imgSource}`;
+    window.location.href = initURL;  
+  }
+});
+
+
+
+
+
 var darkModeOn = false;
 
 // dark mode conversion
-document.getElementById("mode-toggle").onclick = function darkMode() {
+function darkMode() {
   const el = document.body;
   el.classList.toggle("dark-mode");
 
@@ -57,6 +76,14 @@ document.getElementById("mode-toggle").onclick = function darkMode() {
   logo1.classList.toggle("dark-logo");
   logo2.classList.toggle("dark-logo");
 
+  const contactForm = document.querySelectorAll("input");
+    contactForm.forEach((el) =>{
+      el.classList.toggle("h1dark");
+  });
+
+  const msg = document.querySelector("textarea");
+  msg.classList.toggle("h1dark");
+  
   darkModeOn = true;
 };
 
@@ -85,25 +112,8 @@ document.getElementById("btn-main").onclick = function () {
 };
 
 
-//build the projectpage
-const links = document.querySelectorAll("#projects article");
-links.forEach((el) => {
 
-  const title = el.querySelector("h4").innerHTML;
-  console.log(title);
-  const tag = el.querySelector("p").innerHTML;
-  console.log(tag);
-
-  const link = el.querySelector("a");
-  return link.addEventListener("click", projDetailPage, false);
-});
-
-function projDetailPage() {
-  document.querySelector("#project-detail h1").innerHTML = title;
-  document.querySelector("#project-meta h4").innerHTML = tag;
-  
-}
-
+//form alert
 function formSubmit(){
   alert ("Form submitted");
 }
