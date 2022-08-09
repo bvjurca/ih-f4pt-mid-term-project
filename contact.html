@@ -1,69 +1,72 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html>
-  <head>
-    <title>Contact Bogdan</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav id="navbar">
-      <a id="logo" href="/index.html">
-        <img src="/assets/logos/circle.svg" alt="Circle logo"/>
-      </a>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a onclick="darkMode()" id="mode-toggle">🪄</a></li>
-      </ul>
-      <a href="/contact.html">
-        <button type="button" class="btn btn-contact">Contact Us</button>
-      </a>
-    </nav>
-    <section id="contact">
-      <h1>Contact Us</h1>
-      <form onsubmit="formSubmit()" action="contact.html">
-        <div>
-          <label for="name">Full Name *</label>
-          <input type="text" name="name" id="name" placeholder="Enter your full name" required>
-        </div>
-        <div id="emailtel">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address">
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
-          </div>
-        </div>
-        <div>
-          <label for="msg">Message</label>
-          <textarea name="msg" id="msg" placeholder="Write your message here..." rows="8"></textarea>
-        </div>
-        <button type="submit" class="btn" id="btn-form">Submit</button>
-      </form>
-    </section>
 
-    <footer>
+<head>
+  <title>Contact Bogdan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <a id="logo" href="/index.html">
+      <img src="/assets/logos/circle.svg" alt="Circle logo" />
+    </a>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a onclick="darkMode()" id="mode-toggle">🪄</a></li>
+    </ul>
+    <a href="/contact.html">
+      <button type="button" class="btn btn-contact">Contact Us</button>
+    </a>
+  </nav>
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <form onsubmit="formSubmit()" action="contact.html">
       <div>
-        <img src="/assets/logos/circle.svg" alt="Circle logo" id="logo-footer"/>
-        <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
+        <label for="name">Full Name *</label>
+        <input type="text" name="name" id="name" placeholder="Enter your full name" required>
       </div>
-      <div id="footer-links">
+      <div id="emailtel">
         <div>
-          <a href="#">Team</a>
-          <a href="#">Press</a>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email address">
         </div>
         <div>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-        </div>
-        <div>
-          <a href="#">About Us</a>
-          <a href="#">Privacy Policy</a>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
         </div>
       </div>
-    </footer>
-    <script src="scripts.js"></script>
-  </body>
+      <div>
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" placeholder="Write your message here..." rows="8"></textarea>
+      </div>
+      <button type="submit" class="btn" id="btn-form">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div>
+      <img src="/assets/logos/circle.svg" alt="Circle logo" id="logo-footer" />
+      <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
+    </div>
+    <div id="footer-links">
+      <div>
+        <a href="#">Team</a>
+        <a href="#">Press</a>
+      </div>
+      <div>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+      <div>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
