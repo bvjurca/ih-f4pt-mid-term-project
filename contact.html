@@ -4,6 +4,7 @@
 <head>
   <title>Contact Bogdan</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
       <li><a href="/index.html">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a onclick="darkMode()" id="mode-toggle">🪄</a></li>
+      <li><a onclick="darkMode()" id="mode-toggle">☀️</a></li>
     </ul>
     <a href="/contact.html">
       <button type="button" class="btn btn-contact">Contact Us</button>
@@ -30,17 +31,17 @@
       </div>
       <div id="emailtel">
         <div>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email address">
+          <label for="email">Email *</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required>
         </div>
         <div>
-          <label for="phone">Phone</label>
-          <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+          <label for="phone">Phone *</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
         </div>
       </div>
       <div>
-        <label for="msg">Message</label>
-        <textarea name="msg" id="msg" placeholder="Write your message here..." rows="8"></textarea>
+        <label for="msg">Message *</label>
+        <textarea name="msg" id="msg" placeholder="Write your message here..." rows="8" required></textarea>
       </div>
       <button type="submit" class="btn" id="btn-form">Submit</button>
     </form>

@@ -18,12 +18,15 @@ var darkModeOn = false;
 
 // dark mode conversion
 function darkMode() {
+
+  //swap emojis
   var emoji = document.getElementById("mode-toggle");
   if (emoji.innerHTML === "☀️") {
     emoji.innerHTML = "🌙";
   } else {
     emoji.innerHTML = "☀️";
   }
+
   const el = document.body;
   el.classList.toggle("dark-mode");
 
@@ -45,6 +48,7 @@ function darkMode() {
   art.forEach((el) => {
     el.classList.toggle("dark-mode");
   });
+
 
   const head4 = document.querySelectorAll("h4");
   head4.forEach((el) => {
