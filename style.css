@@ -605,6 +605,7 @@ textarea {
 
   input {
     width: 170px;
+    font-size: 0.8em;
   }
 
   #questions .btn {
